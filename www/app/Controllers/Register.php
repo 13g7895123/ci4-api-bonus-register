@@ -12,6 +12,10 @@ class Register extends BaseController
 
     public function phoneValidation()
     {
+
+        echo ENVIRONMENT;
+        die();
+
        $register = new RegisterModel;
 
         $result['success'] = true;
