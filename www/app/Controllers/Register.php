@@ -12,10 +12,10 @@ class Register extends BaseController
 
     public function phoneValidation()
     {
-       $register = new RegisterModel;
+    //    $register = new RegisterModel;
 
         $result['success'] = true;
-        $result['data'] = $register->findAll();
+        // $result['data'] = $register->findAll();
 
         return $this->respond($result, 200);
     }
