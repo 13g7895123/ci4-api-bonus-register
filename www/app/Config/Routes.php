@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 $routes->group("api", function ($routes) {
-    $routes->post("phone", "Register::phoneValidation");
+    $routes->get("phone", "Register::phoneValidation");
 });
 
 /*
